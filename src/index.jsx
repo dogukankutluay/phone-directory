@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
+import './assets/style/variables.module.scss';
 
 import { createBrowserHistory } from 'history';
 import { Router } from 'react-router-dom';

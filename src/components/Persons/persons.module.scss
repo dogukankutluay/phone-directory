@@ -1,0 +1,71 @@
+.persons {
+  height: 100%;
+  position: relative;
+  .header {
+    box-sizing: border-box;
+    padding: 0rem 0.5rem;
+    height: 114px;
+    width: 100%;
+    .top {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 40px;
+      align-items: center;
+      h1 {
+        font-weight: bold;
+      }
+      svg {
+        right: 0;
+        position: absolute;
+        width: 20px;
+        cursor: pointer;
+      }
+    }
+    .searchWrapper {
+      background-color: #e8e8e8;
+      border-radius: 15px;
+      padding: 0.3rem 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      input {
+        padding-left: 0.5rem;
+        background-color: transparent;
+        width: 100%;
+      }
+      svg {
+        width: 18px;
+      }
+    }
+  }
+  .personList {
+    background-color: #ffffff;
+    height: 490px;
+    padding-left: 1rem;
+    overflow: auto;
+
+    .personCard {
+      padding: 0.7rem 0rem;
+      cursor: pointer;
+      border-bottom: 1px solid rgb(201, 199, 199);
+      h1 {
+        font-weight: bold;
+      }
+    }
+  }
+  .personList::-webkit-scrollbar {
+    display: none;
+  }
+  .footer {
+    box-sizing: border-box;
+    padding: 0rem 0.5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
